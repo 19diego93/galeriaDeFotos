@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  min-width: 300px;
+  width: 100%;
+  background: rgb(103, 127, 128);
+  background: linear-gradient(
+    0deg,
+    rgba(78, 97, 74, 0.856) 0%,
+    rgb(126, 81, 139) 100%
+  );
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+}
+.barra {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+/** display imagenes*/
+.galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.galeria img {
+  margin: 20px;
+  height: 50%;
+  width: 60%;
+  box-shadow: 10px 10px 5px 5px #0000009a;
+}
+
+/** boton volverArriba*/
+#volverArriba {
+  position: fixed;
+  bottom: 10%;
+  right: 4%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(230, 133, 133, 0.719);
+  border: #000;
+  border-radius: 10px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+#volverArriba:hover {
+  background-color: #0062cc;
+  color: white;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/** barra inferior*/
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #20754dc9;
+  padding: 40px;
+  margin-top: 30px;
+  font-size: 2rem;
+}
+footer div {
+  margin: 10px;
+}
+
+@media (min-width: 768px) {
+  /** barra superior*/
+
+  .barra {
+    background-color: #c39ad8;
+  }
+}
+
+@media (max-width: 768px) {
+  /** barra superior*/
+
+  .barra {
+    background-color: #ff33b1b9;
+  }
+}
+
+@media (max-width: 480px) {
+  /** barra superior*/
+
+  .barra {
+    background-color: #708aa5;
+  }
+
+  .galeria img {
+    margin: 20px;
+    height: 70%;
+    width: 80%;
+    box-shadow: 5px 5px 2px 2px #0000009a;
+  }
+}
